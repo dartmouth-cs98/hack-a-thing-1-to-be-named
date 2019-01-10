@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{DB23CA52-BF2D-4A50-C122-F5B184469F3E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PickUpControllers.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerController.cs" Line="17" Column="21" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="20" Column="38" />
+      <File FileName="Assets/Scripts/PickUpControllers.cs" Line="11" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
