@@ -9,9 +9,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Text countText;
     public Text winText;
-
+    public Text loseText;
     private Rigidbody rb;
-
     private int count;
 
     void Start()
@@ -20,6 +19,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         winText.text = "";
+        loseText.text = "";
     }
 
     void FixedUpdate()
@@ -40,6 +40,12 @@ public class PlayerController : MonoBehaviour
             count += 1;
             SetCountText();
         }
+
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            gameObject.SetActive(false);
+            loseText.text = "You Lose!";
+        }
     }
 
     void SetCountText()
@@ -48,6 +54,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 12)
         {
             winText.text = "You Win!";
+            gameObject.SetActive(false);
         }
     }
 }
